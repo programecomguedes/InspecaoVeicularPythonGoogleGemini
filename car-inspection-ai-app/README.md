@@ -33,7 +33,7 @@ Este guia fornece instruções claras e concisas para configurar o ambiente de d
 5. **Execução do Servidor de Desenvolvimento:** Após instalar as dependências, execute o seguinte comando para iniciar o servidor de desenvolvimento:
 
     ```
-    ng serve --port 4200
+    npm start
     ```
 
     O servidor será iniciado e estará acessível em `http://localhost:4200`.
