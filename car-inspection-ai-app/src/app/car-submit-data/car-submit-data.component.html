@@ -1,0 +1,99 @@
+<div class="upload-images-container">
+    <!-- [auto]="true"  -->
+    <!--  -->
+    <p-fileUpload 
+        name="file[]" 
+        url="http://localhost:5000/uploadfake"
+        (onUpload)="onUpload($event)"
+        (onSelect)="onSelect()"
+        [multiple]="true"
+        accept="image/*"
+        maxFileSize="1000000"
+        chooseLabel="Selecionar Fotos"
+        uploadLabel="Avaliar Veículo"
+        cancelLabel="Cancelar">
+        <ng-template pTemplate="content">
+            <div *ngIf="loading" style="text-align: center;">
+                <p-progressSpinner 
+                    styleClass="w-4rem h-4rem" 
+                    strokeWidth="2" 
+                    fill="var(--surface-ground)" 
+                    animationDuration="0.8s" />
+            </div>
+            <!-- <p *ngIf="!uploadedFiles.length && !hasSelectedFiles" style="text-align: center; margin: 0px;">Selecione as fotos e clique em "Avaliar Veículo".</p>
+            <p *ngIf="showEvaluateInfo" style="text-align: center; margin: 0px;">Avaliação Concluída.</p> -->
+            <!-- <ul *ngIf="uploadedFiles.length">
+                <li *ngFor="let file of uploadedFiles">
+                    {{ file.name }} - {{ file.size }} bytes
+                </li>
+            </ul> -->
+        </ng-template>
+    </p-fileUpload>
+</div>
+
+<div class="result-container" *ngIf="apiResult">
+    <h1>Análise de Risco e Recomendações<br/>para Seguro Automóvel</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <td>Marca</td>
+                <td>{{ apiResult.marca }}</td>
+            </tr>
+            <tr>
+                <td>Modelo</td>
+                <td>{{ apiResult.modelo }}</td>
+            </tr>
+            <tr>
+                <td>Ano</td>
+                <td>{{ apiResult.ano_veiculo }}</td>
+            </tr>
+            <tr>
+                <td>Cor</td>
+                <td>{{ apiResult.cor }}</td>
+            </tr>
+            <tr>
+                <td>Condições Gerais</td>
+                <td>{{ apiResult.condicoes_gerais }}</td>
+            </tr>
+            <tr>
+                <td>Frente Veículo</td>
+                <td>{{ apiResult.frente_veiculo }}</td>
+            </tr>
+            <tr>
+                <td>Para-brisa</td>
+                <td>{{ apiResult.para_brisa }}</td>
+            </tr>
+            <tr>
+                <td>Quilometragem</td>
+                <td>{{ apiResult.quilometragem }}</td>
+            </tr>
+            <tr>
+                <td>Painel</td>
+                <td>{{ apiResult.painel }}</td>
+            </tr>
+            <tr>
+                <td>Traseira</td>
+                <td>{{ apiResult.traseira_veiculo }}</td>
+            </tr>
+            <tr>
+                <td>Danos não visíveis</td>
+                <td>{{ apiResult.danos_nao_visiveis }}</td>
+            </tr>
+            <tr>
+                <td>Pneus</td>
+                <td>{{ apiResult.danos_nao_visiveis }}</td>
+            </tr>
+            <tr *ngIf="apiResult.risco_seguradora">
+                <td>Risco para a Seguradora</td>
+                <td>{{ apiResult.risco_seguradora }}</td>
+            </tr>
+            <tr>
+                <td>Conclusão</td>
+                <td>{{ apiResult.conclusao }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</div>

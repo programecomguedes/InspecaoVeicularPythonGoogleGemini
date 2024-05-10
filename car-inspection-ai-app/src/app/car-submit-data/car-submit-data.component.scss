@@ -1,0 +1,27 @@
+:host ::ng-deep .upload-images-container {
+    p-fileUpload p-button {
+        margin-right: 10px !important;
+
+        &:first-child {
+            margin-right: 0px;
+        }
+    }
+
+    .no-padding {
+        padding: 0px;
+    }
+}
+
+.upload-images-container,
+.result-container {
+    margin-top: 30px;
+}
+
+.result-container h1 {
+    text-align: center;
+}
+
+.result-container .table {
+    max-width: 800px;
+    margin: 20px auto 0px auto;
+}
