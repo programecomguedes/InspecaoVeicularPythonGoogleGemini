@@ -6,7 +6,7 @@ Car Inspection AI é uma solução para simplificar e agilizar o processo de ins
 ## Como Funciona?
 Com o Car Inspection AI, basta tirar algumas fotos do veículo em questão e deixar a inteligência artificial fazer o resto. Nosso algoritmo analisa cada detalhe das imagens, desde a condição geral até os danos não visíveis, e gera um relatório abrangente para auxiliar na tomada de decisão da seguradora.
 
-## Assista a uma rápida apresentação
+## Clique na imagem abaixo e assista a uma rápida apresentação
 [![Car Inspection AI Demo](/extras/ilustrations/thumbnail-youtube.png)](https://www.youtube.com/watch?v=FFqKtzQyOGk)
 
 ### Inserindo fotos para análise
