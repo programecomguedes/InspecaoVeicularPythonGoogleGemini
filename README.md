@@ -1,7 +1,7 @@
 # Car Inspection AI
 ## Inspeção Veicular Simplificada com Inteligência Artificial
 
-<!-- <iframe width="560" height="315" src="https://youtu.be/7wKHehm4beg" frameborder="0" allowfullscreen></iframe> -->
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=FFqKtzQyOGk" frameborder="0" allowfullscreen></iframe>
 
 
 Car Inspection AI é uma solução para simplificar e agilizar o processo de inspeção veicular para seguradoras. Utilizando a Gemini (tecnologia de Inteligência Artificial da Google), o Car Inspection AI permite uma avaliação detalhada e precisa do estado de um veículo em questão de minutos, fornecendo relatórios completos e confiáveis para avaliação de riscos.
